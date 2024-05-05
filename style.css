@@ -1,0 +1,35 @@
+html,
+body {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+.introMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #444;
+  color: #eee;
+  padding: 36px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: none;
+}
