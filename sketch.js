@@ -123,8 +123,11 @@ function setup() {
 function keyPressed() {
   if (key == " ") {
     dinosaur.jump();
-    jumpSound.play();
     document.querySelector(".introMsg").style.display = "none";
+
+    if (dinosaur.y == 293) {
+      jumpSound.play();
+    }
 
     if (lost) {
       resetSketch();
@@ -172,7 +175,6 @@ function draw() {
     randint = int(random(40, width / 5));
   }
 
-  console.log("height", dinosaur.y);
   for (let o of obstacles) {
     if (o.x < 0) {
       if (obstacles.length > 3) {
