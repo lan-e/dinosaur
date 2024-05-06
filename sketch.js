@@ -125,7 +125,7 @@ function keyPressed() {
     dinosaur.jump();
     document.querySelector(".introMsg").style.display = "none";
 
-    if (dinosaur.y == 293) {
+    if (dinosaur.y == windowHeight / 2 - 50) {
       jumpSound.play();
     }
 
@@ -140,7 +140,7 @@ function mousePressed() {
     if (!lost) {
       dinosaur.jump();
 
-      if (dinosaur.y == 293) {
+      if (dinosaur.y == windowHeight / 2 - 50) {
         jumpSound.play();
       }
     }
