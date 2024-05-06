@@ -25,10 +25,9 @@ function preload() {
 }
 
 function playAudio() {
-  music.play();
+  music.loop();
   soundOn.show();
   soundOff.hide();
-  loop();
 }
 
 function pauseAudio() {
